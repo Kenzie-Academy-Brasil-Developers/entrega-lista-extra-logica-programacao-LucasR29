@@ -10,11 +10,8 @@ function calculateSalary(salary, sales){
     return (salary + largeCommission + basicCommission)
 }
 
-//console.log(calculateSalary(1000, 2000))
-
 function cashMachine(cashOut, salary, sales){
     salary = calculateSalary(salary, sales)
-    console.log(salary)
     let cem = 0
     let cinquenta = 0
     let vinte = 0
@@ -45,8 +42,6 @@ function cashMachine(cashOut, salary, sales){
     }
     return `${cem} notas de cem ${cinquenta} notas de cinquenta ${vinte} notas de vinte ${dez} notas de dez ${cinco} notas de cinco ${dois} notas de dois. Sobrando ${rest}`
 }
-
-cashMachine(1000, 1200, 1000)
 
 function calculateStock(atual, max, min){
     let medium = (max+min)/ 2
